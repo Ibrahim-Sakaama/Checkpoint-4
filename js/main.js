@@ -1,3 +1,7 @@
+$(document).ready(function() {
+    $("#dialog").hide();
+  } );
+
 function strongg()
 {
     var  bold_Items = document.getElementById("textt");
@@ -43,3 +47,10 @@ function thirty()
     var selectedd=document.getElementById("selectt").value;
     document.getElementById("textt").style.fontFamily=selectedd;
 }
+
+$(document).ready(function(){
+$(".text").click(function(){
+    $("#dialog").dialog();
+});
+});
+

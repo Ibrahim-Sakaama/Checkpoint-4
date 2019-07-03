@@ -20,7 +20,7 @@
     margin-right: 0 ;
 }
  
-.image{
+.imageh{
     height: 400px;
     background-size:cover;
     background-attachment: fixed;
@@ -59,8 +59,8 @@
 
 .image-container img:hover {
     
-    transition:  0.5s linear;
-    float:left;
+    /*transition:  0.5s linear;
+    float:left;*/
     outline: 3px solid  rgba(223, 9, 9, 0.925);
   }
 
@@ -190,5 +190,28 @@
   body {
     background-image: Linear-gradient(336deg, rgba(0,0,255,.8), rgba(12, 17, 36, 0.288) 70.71%);
   }
-
+  .image {
+    opacity: 1;
   
+  }
+  .middle {
+    
+    opacity: 0;
+    position: relative;
+    top: -200px;
+    left: 100px;
+  
+  }
+  
+  .image-item:hover > .image{
+    opacity: 0.3;
+  }
+  .image-item:hover > .middle{
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
